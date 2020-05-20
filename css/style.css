@@ -9,15 +9,31 @@
 }
 
 .stats-card {
-    min-width: 250px;
+    min-width: 300px;
+    width: 400px;
     max-width: 430px;
     max-height: 400px;
-    background: rgb(251, 189, 63);
-    background: linear-gradient(90deg, rgba(251, 189, 63, 1) 19%, rgba(252, 70, 150, 1) 79%);
     color: white;
     padding: 50px 40px;
     border-radius: 2%;
     position: relative;
+    display: inline-block;
+    margin: 1rem 1.5rem 2rem 1rem;
+}
+
+.stats-card:nth-child(3n+1) {
+    background: rgb(251, 189, 63);
+    background: linear-gradient(90deg, rgba(251, 189, 63, 1) 19%, rgba(252, 70, 150, 1) 79%);
+}
+
+.stats-card:nth-child(3n+2) {
+    background: rgb(251, 189, 63);
+    background: linear-gradient(90deg, rgba(36, 173, 230, 1) 21%, rgba(11, 88, 175, 1) 73%);
+}
+
+.stats-card:nth-child(3n) {
+    background: rgb(251, 189, 63);
+    background: linear-gradient(90deg, rgba(124, 217, 209, 1) 6%, rgba(11, 138, 113, 1) 70%);
 }
 
 .stats-card::after {
